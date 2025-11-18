@@ -1,0 +1,816 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gloss;
+  src: url(../fonts/fonts/Gloss\ And\ Bloom\ Font.ttf)
+}
+
+:root {
+  --color-primary: #11BB67;
+  --color-secondary: #FF6525;
+  --main-font: "DM Sans", sans-serif;
+  --second-font: gloss;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contactNavBtn {
+  background-color: var(--color-primary) !important;
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contactNavBtn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.contactNavBtn:hover {
+  background-color: var(--color-secondary) !important;
+}
+
+.topBar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0px;
+  transition: 0.3s ease-in-out;
+}
+
+/**/
+.topBar .container .dropdownCompanyInfo a i {
+  color: var(--color-primary);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.topBar .container .dropdownCompanyInfo i {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.topBar .container .dropdownCompanyInfo>i:hover {
+  transform: rotate(90deg);
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/menuCollapse.png) !important;
+}
+
+.navbar-toggler {
+  background-color: var(--color-primary);
+  padding: 0.8rem 0.7rem;
+}
+
+
+.dropdownCompanyInfo {
+  position: relative;
+}
+
+.contactMenu {
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+  list-style: none;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 4px;
+  z-index: 99999;
+  padding: 0;
+  flex-direction: column;
+  top: 2.5rem;
+  animation: openUpMenu 0.5s alternate;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.contactMenu li {
+  transition: 0.3s ease-in-out;
+}
+
+.contactMenu li:hover {
+  background-color: var(--color-secondary);
+}
+
+.topBar .socialIcons {
+  font-size: x-large;
+}
+
+@keyframes openUpMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.contactMenu a {
+  color: black;
+  font-weight: 600;
+}
+
+
+.topBar .contactInfo span {
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+.topBar .contactInfo i {
+  margin-right: 10px;
+}
+
+.topBar .contactInfo a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.topBar .socialIcons a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.topBar .socialIcons {
+  padding-left: 40px;
+  border-left: 1px solid white;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  border: 0;
+  color: white;
+  border-right: 1px solid white;
+}
+
+.contactInfo a i {
+  color: var(--color-primary);
+}
+
+
+
+
+/* End header */
+/* start about us banner */
+.mainBanner {
+  position: relative;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.mainBannerImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mainBanner::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+  background-color: #161b18;
+  opacity: 0.84;
+}
+
+.mainBanner h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.4;
+  color: white;
+  letter-spacing: -6px;
+}
+
+.bannerBreadcrumbListWrap {
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+
+.bannerBreadcrumbListWrap a {
+  color: white;
+}
+
+.bannerBreadcrumbListContent {
+  color: white;
+  border-radius: 5px;
+  padding: 18px 30px;
+  background-color: var(--color-primary);
+}
+
+.bannerBreadcrumbListContent span {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* end about us banner */
+/* main section */
+.aboutThumbWrap img {
+  border-radius: 15px;
+}
+
+.aboutThumbBox {
+  margin-right: 30px;
+}
+
+.aboutThumb1 {
+  margin-bottom: 30px;
+}
+
+.aboutThumb2 img {
+  width: 100%;
+  max-width: inherit;
+}
+
+.aboutTitleBox {
+  margin-bottom: 3rem;
+  font-family: var(--main-font);
+  transition: 0.6s ease-in-out;
+}
+
+.aboutTitleBox .aboutTitle {
+  font-family: var(--second-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.aboutsubtitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.aboutTitleBox p {
+  font-size: 17px;
+}
+
+.aboutCounterBox {
+  font-family: var(--main-font);
+  margin-bottom: 3rem;
+}
+
+.aboutCounterText {
+  border-right: 1px dashed;
+}
+
+.aboutCounterNumber {
+  font-size: 26px;
+}
+
+.aboutCounterText p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0;
+}
+
+.discoverBtn .btn {
+  color: white;
+  padding: 20px 30px;
+  font-size: 15px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.discoverBtn .btn:hover {
+  color: white;
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+}
+
+.discoverBtn .btn span svg {
+  margin-left: 10px;
+}
+
+/* start video banner */
+.videoBlock {
+  /*     background-image: url(../images/video-bg-about.jpg);
+*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*     padding: 150px 0;
+*/
+}
+
+.videoBlock .container {
+  padding: 150px 20px;
+}
+
+.videoBackgroundImg {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.videoBtn .btn {
+  color: white;
+  padding: 20px 40px;
+  font-size: 15px;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.videoBtn .btn:hover {
+  color: white;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.videoBlock .row {
+  color: white;
+}
+
+.videoBlock::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: #161b18;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.videoContent {
+  font-family: var(--main-font);
+}
+
+.videoAboutSubtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.videoContent p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.popupVideo {
+  font-size: 17px;
+  width: 104px;
+  height: 104px;
+  line-height: 104px;
+  color: var(--color-primary);
+  border-radius: 50%;
+  background-color: azure;
+}
+
+.videoIcon a::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 80%;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.4);
+  animation: videoIconAnimation 2s linear infinite;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.videoIcon a::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  height: 60%;
+  content: "";
+  transform: scale(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.472);
+  animation: videoIconAnimation2 2s linear infinite;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.videoKite {
+  right: -16%;
+}
+
+/* end video banner */
+/* start Why you choose us */
+.chooseUs {
+  padding: 120px 0;
+  font-family: var(--main-font);
+}
+
+.chooseUsTitleBox span {
+  font-family: var(--second-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.chooseUsTitle {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.chooseUsTitleBox p {
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+}
+
+.aboutService {
+  margin-bottom: 40px;
+}
+
+.aboutServiceIcon {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.aboutServiceTitle {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.aboutServiceDescription p {
+  color: rgb(107, 107, 107)
+}
+
+.chooseUsThumb {
+  transform: scale(0.9);
+}
+
+.chooseUsThumb img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* end Why you choose us */
+/* start footer */
+.footer {
+  padding: 120px 0;
+  color: white;
+  font-family: var(--main-font);
+  background: #161b18;
+}
+
+.footerLeftShape {
+  bottom: 0;
+  left: 0;
+}
+
+.footerRightShape {
+  bottom: 0;
+  right: 0;
+}
+
+.footerLogo {
+  margin-bottom: 30px;
+}
+
+.footerContent {
+  margin-bottom: 30px;
+}
+
+.footerContent p {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.footerSocialIcons a {
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  line-height: 57px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.footerSocialIcons a i {
+  color: white;
+  font-size: 1rem;
+  z-index: 5;
+  position: relative;
+}
+
+.footerSocialIcons a::before {
+  position: absolute;
+  content: '';
+  background-color: var(--color-primary);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+
+.footerSocialIcons a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.footerSocialIcons a:hover {
+  border-color: transparent;
+}
+
+.footerBlockTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.fotCol2 {
+  padding-left: 80px;
+  margin-bottom: 60px;
+}
+
+.footerList ul {
+  padding-left: 0;
+}
+
+.footerList li {
+  list-style: none;
+}
+
+.footerList ul li a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footerForm input {
+  font-size: 16px;
+  width: 90%;
+  padding: 15px 33px 15px 10px;
+  background: white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.footerForm input::placeholder {
+  color: black;
+}
+
+.footerForm .btn {
+  color: white;
+  padding: 15px 24px;
+}
+
+.footerBtn {
+  background-color: var(--color-primary) !important;
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.footerBtn:hover {
+  background-color: var(--color-secondary) !important;
+}
+
+.copyrightWrap {
+  padding: 29px 70px;
+  background-color: #2d322f;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  margin-top: -83px;
+}
+
+.copyrightText a {
+  color: var(--color-primary);
+}
+
+.copyrightPrivacy a {
+  color: white;
+}
+
+
+
+.scrollTop {
+  transition: 0.3s ease-in-out;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  pad: 15px;
+  right: 10px;
+  z-index: 99;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.scrollTop i {
+  padding: 5px 0;
+  color: white;
+}
+
+.scrollTop:hover {
+  background-color: var(--color-secondary);
+}
+
+/* end footer */
+@keyframes videoIconAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes videoIconAnimation2 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+/*Media Queries*/
+
+
+@media screen and (max-width: 395px) {
+  .dropdownCompanyInfo>a {
+    display: none;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .navbar-collapse .navbar-nav {
+    gap: 1rem !important;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  .aboutThumb2 img {
+    width: 100%;
+  }
+
+  .topBar .contactInfo {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .aboutThumbBox {
+    margin-right: 0 !important;
+  }
+
+  .aboutCounterText {
+    text-align: inherit;
+  }
+
+  .topBar .contactInfo span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .topBar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topBar .socialIcons {
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .topBar .contactInfo span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .fotCol2 {
+    padding-left: 0px;
+  }
+
+  .aboutThumb1 img {
+    width: 100%
+  }
+
+  .topBar .container {
+    justify-content: space-between !important;
+    flex-direction: row !important;
+  }
+
+  .aboutThumbBox {
+    margin-right: 2rem;
+  }
+
+  .topBar .socialIcons {
+    border-left: none !important;
+  }
+
+  .aboutThumbSingle img {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .aboutCounterText {
+    text-align: center;
+  }
+
+  .aboutCounterText p {
+    margin-bottom: 1rem;
+  }
+
+  .aboutService {
+    text-align: center;
+  }
+
+}
+
+
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+  text-shadow: none;
+}
+
+.dropdown-item:active {
+  background-color: var(--color-primary);
+}

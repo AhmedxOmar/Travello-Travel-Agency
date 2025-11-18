@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fonts/flaticon_travel-and-tour.css"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/gloss-and-bloom"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/blogDetails.css" />
+    <!--   <link rel="stylesheet" href="assets/css/aboutUsStyles.css">
+ -->
+    <link rel="stylesheet" href="assets/css/general.css" />
+  </head>
+
+  <body>
+    <header class="d-inline">
+      <div class="topBar">
+        <div
+          class="container d-flex justify-content-between align-items-center flex-sm-row"
+        >
+          <div class="dropdownCompanyInfo d-xl-none d-lg-none d-inline-block">
+            <i class="fa-solid fa-chevron-right toggleChevron"></i>
+            <a class="text-decoration-none text-light" href="#">
+              <i class="fa-solid fa-phone-volume"></i>
+              (000) 967-237-96
+            </a>
+            <ul class="contactMenu collapseList">
+              <li class="p-3">
+                <a
+                  class="text-decoration-none d-flex align-items-center"
+                  href="#"
+                >
+                  <i class="fa-solid fa-phone-volume"></i>
+                  (000) 967-237-96
+                </a>
+              </li>
+              <li class="p-3">
+                <a
+                  class="text-decoration-none d-flex align-items-center"
+                  href="#"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  toursinfo@gmail.com
+                </a>
+              </li>
+              <li class="p-3">
+                <a
+                  class="text-decoration-none d-flex align-items-center"
+                  href="#"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  290 Grand Avenue Maitland, FL 32751
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contactInfo">
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i
+              ><span>(000) 967-237-96</span></a
+            >
+            <a href="#"
+              ><i class="fa-regular fa-envelope"></i
+              ><span>toursinfo@gmail.com</span></a
+            >
+            <a href="#">
+              <i class="fa-solid fa-location-dot"></i
+              ><span>290 Grand Avenue Maitland, FL 32751</span></a
+            >
+          </div>
+          <div class="socialIcons b-0">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        class="navbar sticky-top navbar-expand-lg bg-white"
+        data-bs-theme="dark"
+      >
+        <div class="container text-dark justify-content-between">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo"
+              width="108"
+              height="29"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-4">
+                <a
+                  href="index.html"
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown me-4">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdownTours"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tours
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownTours">
+                  <li>
+                    <a class="dropdown-item" href="tour_grid.html">Tour</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tour-detail.html"
+                      >Tour Detail</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-4">
+                <a href="destination.html" class="nav-link text-dark"
+                  >Destination</a
+                >
+              </li>
+              <li class="nav-item me-4">
+                <a href="about-us.html" class="nav-link text-dark">About</a>
+              </li>
+
+              <li class="nav-item dropdown me-4">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdownBlog"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="blogDetails.html"
+                      >Blog Detail</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="contactNavBtn ms-auto">
+              <a href="ContactUs.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="mainBanner position-relative d-flex align-items-center justify-content-center z-1"
+      >
+        <img
+          src="assets/images/breadcrumb.jpg"
+          draggable="false"
+          class="mainBannerImg"
+          alt="Discovery Island Kayak Tour"
+        />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bannerContent">
+                <div class="bannerTitleBox">
+                  <h3 class="text-uppercase text-center">
+                    TOP TRAVEL BLOGS TO DISCOVER THIS WINTER
+                  </h3>
+                </div>
+                <div
+                  class="bannerBreadcrumbListWrap position-absolute text-center"
+                >
+                  <div class="bannerBreadcrumbListContent d-inline-block">
+                    <span
+                      ><a class="text-decoration-none" href="index.html"
+                        >home</a
+                      ></span
+                    >
+                    <span>//</span>
+                    <span>Discovery Island Kayak Tour</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="container content-section">
+        <div class="row">
+          <!-- Main Content -->
+          <div class="col-md-8">
+            <div class="blog-post">
+              <img
+                src="./assets/images/slider-1-1.jpg"
+                alt="Travel Blog Image"
+                height="400px"
+              />
+              <!-- Replace with your image URL -->
+              <div class="post-meta d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-alt text-success"></i>
+                <span>14 Jan 2024</span>
+              </div>
+              <h2>Top travel blogs to discover this winter</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-md-4 recent-posts">
+            <h4>Recent post:</h4>
+            <!-- Recent Post Item -->
+            <div class="recent-post d-flex">
+              <img src="./assets/images/blog-1-4.jpg" alt="Recent Post 1" />
+              <!-- Replace with your image URL -->
+              <div>
+                <p><i class="fas fa-calendar-alt"></i> 02 Jan, 2024</p>
+                THINGS TO SEE AND DO WHEN VISITING JAPAN
+              </div>
+              <hr />
+            </div>
+            <hr />
+            <!-- Recent Post Item -->
+            <div class="recent-post d-flex">
+              <img src="./assets/images/blog-1-4.jpg" alt="Recent Post 2" />
+              <!-- Replace with your image URL -->
+              <div>
+                <p><i class="fas fa-calendar-alt"></i> 02 Jan, 2024</p>
+                A PLACE WHERE TO START NEW LIFE WITH ADVENTURE TRAVEL
+              </div>
+            </div>
+            <hr />
+
+            <!-- Recent Post Item -->
+            <div class="recent-post d-flex">
+              <img src="./assets/images/blog-1-4.jpg" alt="Recent Post 3" />
+              <!-- Replace with your image URL -->
+              <div>
+                <p><i class="fas fa-calendar-alt"></i> 02 Jan, 2024</p>
+                THE VIBRANT HARBOR CITY DOWN UNDER
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer overflow-hidden position-relative">
+      <div class="footerLeftShape position-absolute">
+        <img src="assets/images/left-tree.png" alt="footerBackgroundL" />
+      </div>
+      <div class="footerRightShape position-absolute">
+        <img src="assets/images/right-tree.png" alt="footerBackgroundR" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footerBlock fotCol1">
+              <div class="footerLogo">
+                <a href="index.html"
+                  ><img src="assets/images/logo.png" alt="Travello"
+                /></a>
+              </div>
+              <div class="footerContent">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  doeiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut
+                </p>
+                <div class="footerSocialIcons position-relative">
+                  <a href="#"
+                    ><i class="flaticon-facebook-app-symbol text-light"></i
+                  ></a>
+                  <a href="#"><i class="flaticon-twitter"></i></a>
+                  <a href="#"><i class="flaticon-skype"></i></a>
+                  <a href="#"><i class="flaticon-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footerBlock fotCol2">
+              <h3
+                class="footerBlockTitle text-uppercase text-decoration-underline"
+              >
+                Company:
+              </h3>
+              <div class="footerList">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About us</a></li>
+                  <li><a href="blog.html">Blog update</a></li>
+                  <li><a href="#">Our services</a></li>
+                  <li><a href="#">Testimonial</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footerBlock fotCol3">
+              <h3
+                class="footerBlockTitle text-uppercase text-decoration-underline"
+              >
+                Quick links:
+              </h3>
+              <div class="footerList">
+                <ul>
+                  <li><a href="#">Privacy & policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Hydropowe Plants</a></li>
+                  <li><a href="#">Customer support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 z-3">
+            <div class="footerBlock fotCol4">
+              <h3
+                class="footerBlockTitle text-uppercase text-decoration-underline"
+              >
+                Subscribe Newsletter:
+              </h3>
+              <div class="footerForm">
+                <form action="#">
+                  <div class="footerInput">
+                    <input
+                      id="email"
+                      autocomplete="email"
+                      type="email"
+                      placeholder="Enter Your Email:"
+                    />
+                  </div>
+                  <button type="submit" class="btn footerBtn">
+                    Subscribe Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright z-3 position-relative">
+      <div class="container">
+        <div class="copyrightWrap z-2">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+              <div class="copyrightText text-center text-lg-start">
+                <p class="mb-0">
+                  Copyright © 2024 <span><a href="#">Travello</a></span> All
+                  Right Reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+              <div class="copyrightPrivacy text-end">
+                <a class="text-decoration-none" href="#"
+                  >Privacy & Policy || Terms & Conditions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollTop" class="btn scrollTop" onclick="topFunction();">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

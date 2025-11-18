@@ -1,0 +1,133 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url(../flaticon_mycollection.woff2) format("woff2"),
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-maps-and-flags:before {
+    content: "\f101";
+}
+.flaticon-search-interface-symbol:before {
+    content: "\f102";
+}
+.flaticon-calendar:before {
+    content: "\f103";
+}
+.flaticon-user:before {
+    content: "\f104";
+}
+.flaticon-tour-guide:before {
+    content: "\f105";
+}
+.flaticon-worker:before {
+    content: "\f106";
+}
+.flaticon-tickets:before {
+    content: "\f107";
+}
+.flaticon-origami:before {
+    content: "\f108";
+}
+.flaticon-journey:before {
+    content: "\f109";
+}
+.flaticon-camping:before {
+    content: "\f10a";
+}
+.flaticon-luggage:before {
+    content: "\f10b";
+}
+.flaticon-travel:before {
+    content: "\f10c";
+}
+.flaticon-parachute:before {
+    content: "\f10d";
+}
+.flaticon-deer:before {
+    content: "\f10e";
+}
+.flaticon-phone-call:before {
+    content: "\f10f";
+}
+.flaticon-email:before {
+    content: "\f110";
+}
+.flaticon-pin:before {
+    content: "\f111";
+}
+.flaticon-facebook-app-symbol:before {
+    content: "\f112";
+}
+.flaticon-twitter:before {
+    content: "\f113";
+}
+.flaticon-skype:before {
+    content: "\f114";
+}
+.flaticon-linkedin:before {
+    content: "\f115";
+}
+.flaticon-bag:before {
+    content: "\f116";
+}
+.flaticon-chevron:before {
+    content: "\f117";
+}
+.flaticon-left-chevron:before {
+    content: "\f118";
+}
+.flaticon-coin:before {
+    content: "\f119";
+}
+.flaticon-dollar-currency-symbol:before {
+    content: "\f11a";
+}
+.flaticon-star:before {
+    content: "\f11b";
+}
+.flaticon-like:before {
+    content: "\f11c";
+}
+.flaticon-camera:before {
+    content: "\f11d";
+}
+.flaticon-clock:before {
+    content: "\f11e";
+}
+.flaticon-user-1:before {
+    content: "\f11f";
+}
+.flaticon-verified:before {
+    content: "\f120";
+}
+.flaticon-reload:before {
+    content: "\f121";
+}
+.flaticon-eye:before {
+    content: "\f122";
+}
+.flaticon-chat:before {
+    content: "\f123";
+}
+

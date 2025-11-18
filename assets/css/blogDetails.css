@@ -1,0 +1,52 @@
+.content-section {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .content-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .recent-posts {
+    margin-top: 40px;
+  }
+
+  .recent-posts h4 {
+    margin-bottom: 20px;
+  }
+
+  .recent-post {
+    margin-bottom: 15px;
+  }
+
+  .recent-post img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+
+  .recent-post p {
+    margin-bottom: 5px;
+  }
+
+  .recent-post i {
+    color: #11bb67;
+    margin-right: 5px;
+  }
+
+  .BlogDetailsPath {
+    background-color: #11bb67;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 5px;
+    bottom: -40px;
+  }

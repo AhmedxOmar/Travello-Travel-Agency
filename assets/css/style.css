@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.balloon {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  height: 130px;
+  width: 100px;
+}
+
+.star {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  height: 50px;
+}
+
+.top-destinations {
+  font-family: "Gloss And Bloom", sans-serif;
+  color: #ff6525;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.my-5 {
+  margin-top: 8rem !important;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card-container {
+  position: relative;
+  margin-bottom: 20px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-align: left;
+  z-index: 2;
+}
+
+.card-text h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-text p {
+  font-size: 14px;
+  margin: 0;
+}
+.about-company {
+  position: relative;
+  padding: 80px 0;
+  background-color: #f4f8f9;
+  overflow: hidden;
+}
+
+.background-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.backImage {
+  width: 100%;
+  height: 200%;
+}
+
+/* .container {
+  position: relative;
+  z-index: 1;
+} */
+
+.image-stack {
+  position: relative;
+  height: 500px;
+}
+
+.image-stack img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.top-image {
+  position: absolute;
+  bottom: 48px;
+  left: -19px;
+  z-index: 3;
+  width: 50%;
+  height: 240px;
+  border: 5px solid white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.middle-image {
+  position: absolute;
+  top: -15px;
+  left: 90px;
+  z-index: 2;
+  width: 66%;
+  height: 277px;
+}
+
+.bottom-image {
+  position: absolute;
+  top: 267px;
+  right: 69px;
+  z-index: 1;
+  width: 39%;
+  height: 47%;
+}
+
+.section-title {
+  font-family: "Gloss And Bloom", sans-serif;
+  color: #ff6525;
+
+  font-size: 24px;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: black;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconName {
+  font-weight: bold;
+}
+
+/* .feature .icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+} */
+
+.feature h5 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.feature p {
+  margin: 0;
+  color: #777;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.background {
+  background-color: #ff6525;
+}
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.textStyle {
+  font-family: "Gloss And Bloom", sans-serif;
+  font-size: 20px;
+  color: #ff6525;
+}
+/* .card {
+  border: none;
+}
+.positionValues {
+  top: 20px;
+  left: 20px;
+} */
+.translateValues {
+  right: 10%;
+  bottom: 38%;
+}
+@media screen and (max-width: 750px) {
+  .translateValues {
+    bottom: 40%;
+  }
+}
+.spacing {
+  margin-left: 28%;
+}
+
+@media screen and (max-width: 750px) {
+  .spacing {
+    margin-left: 0;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 992px) {
+  .spacing {
+    margin-left: 0;
+  }
+
+  .col-md-4 {
+    flex: 0 0 30%;
+    max-width: 100%;
+  }
+}
+
+/* .topBar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0px;
+}
+.topBar .contactInfo span {
+  margin-right: 20px;
+  font-weight: 400;
+}
+.topBar .contactInfo i {
+  margin-right: 10px;
+}
+.topBar .contactInfo a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.topBar .socialIcons a {
+  margin-right: 10px;
+  color: #fff;
+}
+.topBar .socialIcons {
+  padding-left: 40px;
+  margin-left: 10%;
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #000;
+}
+.contact-btn {
+  padding: 10px 20px;
+  border: 0;
+  color: white;
+  border-right: 1px solid white;
+}
+@media (max-width: 1024px) {
+  .topBar .contactInfo {
+    display: none;
+  }
+} */
+
+.super {
+  background-image: url("images/slider-1-2.jpg");
+  background-size: auto;
+  margin-right: auto;
+  background-position: center;
+  height: 650px;
+  position: relative;
+  /* transform:scaleX(1.3); */
+  animation-name: change;
+  animation-duration: 6s;
+  animation-duration: linear;
+  animation-iteration-count: infinite;
+  animation-delay: ease-in-out;
+}
+@keyframes change {
+  0% {
+    background-image: url("../images/slider-1-2.jpg");
+  }
+  50% {
+    background-image: url("../images/slider-3.jpg");
+  }
+  100% {
+    background-image: url("../images/slider-1-1.jpg");
+  }
+}
+
+.sub {
+  width: 100%;
+  height: 100%;
+  background-color: #0000006d;
+}
+
+.super-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.super-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.super-text h3 {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Pacifico", cursive;
+}
+@media (max-width: 768px) {
+  .super-text h1 {
+    font-size: 48px;
+  }
+
+  .super-text h3 {
+    font-size: 18px;
+  }
+}
+
+/* Blog Section Styles */
+.blogSection {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.blogSection .sticker {
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: 20px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blogSection h3 {
+  color: #ff6525;
+  margin-bottom: 25px;
+  font-family: "Gloss And Bloom", sans-serif;
+  font-size: 20px;
+}
+
+.blogSection h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #000;
+  width: 40%;
+  margin-left: 30%;
+  font-weight: bold;
+}
+.travelCard {
+  max-width: 350px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.travelCard img {
+  width: 100%;
+  height: auto;
+}
+
+.categoryBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ff6525;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cardBody {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-date {
+  color: #757575;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardBtn {
+  background-color: #b5e4ca;
+  color: #00a65a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cardBtn:hover {
+  background-color: #a4d3b5;
+}
+
+.calenderSticker {
+  color: #11bb67;
+}
+
+.socialIcons a {
+  color: white;
+  margin-right: 15px;
+}
+
+.icon {
+  border: white 1px solid;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* overflow-x: hidden; */
+}
+
+@media (max-width: 576px) {
+  .topBar .contactInfo span {
+    font-size: 14px;
+  }
+}
+
+.greenDiv {
+  position: absolute;
+  display: flex;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #11bb67;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  min-width: fit-content;
+  border-radius: 4px;
+}
+
+.greenDiv a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.greenDiv .breadcrumb-separator {
+  margin: 0 5px;
+}
+
+.greenDiv .current-page {
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .greenDiv {
+    top: auto;
+  }
+}
+.card {
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.badge {
+  margin: 3px;
+  font-size: 15px;
+}
+
+.discount-badge {
+  background-color: #28a745;
+}
+
+.featured-badge {
+  background-color: #ff6525;
+}
+
+.card-title,
+.card-text,
+.price,
+.new-price {
+  margin: 0;
+}
+
+.card-text {
+  font-size: 10px;
+}
+
+.price {
+  text-decoration: line-through;
+  color: #ff6525;
+}
+
+.address {
+  margin-top: 120px;
+}
+
+.new-price {
+  color: white;
+  font-weight: bold;
+}
+
+.pagination {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pagination ul li {
+  display: inline-block;
+}
+
+.pagination ul li a {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination ul li a.next {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination ul li a:hover {
+  background-color: #ddd;
+}
+
+.btn-next {
+  background-color: #28a745;
+  color: white;
+}
+.greenBackground {
+  background-color: #11bb67;
+}
+.iconsWhite {
+  color: white;
+}
+.orangColor {
+  color: #ff6525;
+}
+
+.buttonHover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.buttonHover:hover {
+  background-color: #11bb67;
+  opacity: 1;
+}
+
+.homeBanner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: #0b05056d;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: ease-in-out 1s;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.bannerText h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.bannerText h3 {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Pacifico", cursive;
+}
+
+@media (max-width: 768px) {
+  .bannerText h1 {
+    font-size: 48px;
+  }
+
+  .bannerText h3 {
+    font-size: 18px;
+  }
+}

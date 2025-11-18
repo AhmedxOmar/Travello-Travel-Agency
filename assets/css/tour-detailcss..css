@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+}
+
+
+.hero {
+    background-image: url('../images/breadcrumb.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: auto;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+
+}
+.whole {
+    width: 100%;
+    height: 70vh;
+    background-color:#000000ab;;
+}
+
+.hero-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    text-transform:uppercase;
+}
+
+.hero-text h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+}
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+.greenDiv {
+    position: absolute; 
+    display: flex;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #11BB67;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    min-width: fit-content;
+    border-radius: 4px;
+}
+
+.greenDiv a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.greenDiv .breadcrumb-separator {
+    margin: 0 5px;
+}
+
+.greenDiv .current-page {
+    color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .greenDiv {
+        top:auto
+    }
+}
+
+
+
+
+
+
+
+.page-body{
+    margin-top: 10% !important;
+}
+
+
+.discover-image{
+    width: 100%;
+    border-radius: 10px;
+}
+.text-image h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.text-image p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+.package-section {
+    background-color: #F3F8F6;
+    border-radius: 8px;
+   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.package-section h3 {
+    width: 100%;
+    background-color: #4ca029;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.package-form {
+    padding: 14px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+
+    margin-bottom: 5px;
+    color: #333;
+}
+.package-form .date{
+    font-weight: bold;
+}
+.package-form .time{
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F3F8F6;
+}
+
+.input-group .icon-calendar {
+    position: absolute;
+    right: 15px;
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 30px 0px;
+    background-color: #F3F8F6;
+}
+
+
+.tickets {
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+.ticket-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F3F8F6;
+}
+
+.counter button {
+    background-color: #F3F8F6;
+    color: #45a049;
+    border:0;
+    padding: 10px 10px;
+
+}
+
+.additional-services {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-item input {
+    margin-right: 10px;
+}
+
+.total-cost {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.total-cost .price {
+    color: #4CAF50;
+}
+
+
+.book-btn {
+    background-color: #11BB67;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #45a049;
+}
+
+
+.tour-info {
+    background-color: #F3F8F6;
+    border: 1px solid #ddd;
+    /* padding: 15px; */
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tour-info h3 {
+    text-align: center;
+    background-color: #4ca029;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+}
+
+.tour-info ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.tour-info ul li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.tour-info .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+
+
+.tour-header {
+    text-align: left;
+    /* padding: 20px; */
+    border-bottom: 1px solid #eee;
+}
+
+
+.location-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.location-review p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+.location-review .location i{
+    color: #11BB67;
+}
+.location-review .review i{
+    color: #FF6525;
+}
+
+.location-review .icon-location {
+    color: #4CAF50;
+    margin-right: 5px;
+}
+
+.location-review .icon-star {
+    color: #FF6F00;
+    margin-right: 5px;
+}
+
+.tour-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4%;
+}
+
+.tour-details {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+
+.tour-details p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.detail-item .icon-price,
+.detail-item .icon-duration,
+.detail-item .icon-type {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+.detail-item strong {
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.tour-section {
+    max-width: 800px;
+    margin: 60px auto;
+    /* padding: 20px; */
+  }
+  
+  .tour-amenities h2,
+  .location h2 {
+    font-weight: 700px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .amenities-list {
+    border: 1px solid #59bc5e;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .amenities-list span {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .amenities-list span i{
+    color: #FF6525;
+  }
+  
+  .amenities-list span::before {
+    margin-right: 5px;
+  }
+  
+  .location {
+    margin-top: 20px;
+  }
+  
+  .map-container {
+    margin-top: 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 60vh;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .pagination {
+    margin-top: 7%;
+    text-align: center;
+  }
+  
+  .pagination ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination ul li {
+    display: inline-block;
+  }
+  
+  .pagination ul li a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pagination ul li a.next {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .pagination ul li a:hover {
+    background-color: #ddd;
+  }
